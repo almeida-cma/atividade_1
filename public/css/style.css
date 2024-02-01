@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.background {
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor escura com transparência */
+}
+
+.content {
+    text-align: center;
+    color: white;
+    z-index: 1; /* Para manter o conteúdo acima da overlay */
+    padding: 20px; /* Adiciona algum espaçamento interno à div.content */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro semitransparente */
+}
+
+input {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
